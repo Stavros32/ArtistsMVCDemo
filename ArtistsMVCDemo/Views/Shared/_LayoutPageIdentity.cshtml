@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+
+    <div id= "IdentityForm">
+        @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/jquwry")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
